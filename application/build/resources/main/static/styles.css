@@ -1,0 +1,89 @@
+body{
+    background-color: #CBE5FE;
+    font-family: Arial;
+}
+
+header{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0%;
+    max-width:60%;
+}
+
+main{
+    background-color: #FFFFFF;
+    max-width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:0%;
+    text-align:center;
+    padding:0.3em;
+}
+
+button, .button, .inputButton{
+    background-color: #3697FE;
+    font-size: 13pt;
+    padding: 0.3em;
+    border-style:solid;
+    margin:0.5em;
+    color: black;
+    display:inline-block;
+    text-decoration: none;
+}
+
+#staffLoginLink, #logOutLink, .staffLogOutLink{
+    float: right;
+}
+
+form{
+    text-align: center;
+    margin:0.5em;
+}
+
+input{
+    margin-bottom: 0.5em;
+}
+
+#incomingRequest{
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width:90%;
+    padding:0.3em;
+}
+
+ #activeAmbulances{
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width:90%;
+    padding:0.3em;
+}
+
+#statusBox{
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width:60%;
+    padding:0.3em;
+}
+
+#hospitalResults{
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width:90%;
+    padding:0.3em;
+}
+
+#resultsName{
+    font-size: 20pt;
+}

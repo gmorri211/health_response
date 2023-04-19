@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Login - NHS Glasgow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+</header>
+<main>
+    <h1>Registered</h1>
+    <p th:text="'First Name: ' + ${register.firstName}" />
+    <p th:text="'Surname: ' + ${register.surname}" />
+    <p th:text="'Username: ' + ${register.username}" />
+    <a href="/login">Log in</a>
+</main>
+</body>
+</html>

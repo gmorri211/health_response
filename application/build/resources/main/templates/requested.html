@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Request Ambulance - NHS Glasgow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+</header>
+<main>
+    <h1>Ambulance Requested</h1>
+    <p th:text="'Name of Requester: ' + ${ambulancerequest.name}" />
+    <p th:text="'Location: ' + ${ambulancerequest.location}" />
+    <p th:text="'Injury: ' + ${ambulancerequest.injuryDesc}" />
+    <a href="/usermenu">Return to Menu</a>
+</main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Request Ambulance - NHS Glasgow</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+        </header>
+        <main>
+            <h1>Request Ambulance</h1>
+            <form action="#" th:action="@{/ambulancerequest}" th:object="${ambulancerequest}" method="post">
+                Enter Name of Requester<br>
+                <input class="bigText" type="text" th:field="*{name}"><br>
+                Enter Location<br>
+                <input class="bigText" type="text" th:field="*{location}"><br>
+                Enter Description of Injury<br>
+                <input class="bigText" type="text" th:field="*{injuryDesc}"><br>
+                <input class="inputButton" id="requestAmbulanceButton" type="submit" value="Send Request">
+            </form>
+            or call <a href="https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/">999</a>
+        </main>
+    </body>
+</html>

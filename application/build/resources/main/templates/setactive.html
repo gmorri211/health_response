@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Ambulance Requests - NHS Glasgow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+</header>
+<main>
+  <h1>Ambulance Requests</h1>
+    <tbody>
+    <tr th:each="ambulancerequest: ${incomingRequestList}">
+      ID: <td th:text="${ambulancerequest.id}" />,
+      Name: <td th:text="${ambulancerequest.name}" />,
+      Location: <td th:text="${ambulancerequest.location}" />,
+      Injury: <td th:text="${ambulancerequest.injuryDesc}" /><br>
+    </tr>
+    </tbody>
+    <form action="#" th:action="@{/setactive}" th:object="${setactive}" method="post">
+      ID: <input type="text" th:field="*{id}" />
+      <select th:field="*{ambulance}">
+        <option value="Ambulance 1">Ambulance 1</option>
+        <option value="Ambulance 2">Ambulance 2</option>
+      </select>
+      <select th:field="*{hospital}">
+        <option value="Royal Infirmary">Royal Infirmary</option>
+        <option value="Queen Elizabeth">Queen Elizabeth</option>
+      </select>
+      <input class="inputButton" id="sendAmbulance" type="submit" value="Send Ambulance">
+    </form>
+</main>
+</body>
+</html>
