@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Check Patient In - NHS Glasgow</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+        </header>
+        <main>
+            <h1>Check Patient In</h1>
+            <form action="#" th:action="@{/checkin}" th:object="${checkin}" method="post">
+                <p>Patient Name: <input type="text" th:field="*{name}" /></p>
+                <p>Injury Description: <input type="text" th:field="*{injuryDesc}" /><br>
+                <p>Urgency Level: <select th:field="*{urgencyLevel}">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select><br>
+                <input class="inputButton" id="checkInButton" type="submit" value="Check In">
+            </form>
+        </main>
+    </body>
+</html>

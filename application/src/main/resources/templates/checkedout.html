@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Check Patient Out - NHS Glasgow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+</header>
+<main>
+    <h1>Patient Checked Out</h1>
+    <p th:text="'Checked out patient with ID: ' + ${checkout.id}" />
+    <a href="/staffmenu">Continue</a>
+</main>
+</body>
+</html>

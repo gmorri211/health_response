@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+    <html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Check ER Capacity - NHS Glasgow</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <header>
+        <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+    </header>
+    <main>
+        <h1>Results</h1>
+        <div id="hospitalResults">
+            <p th:text="${ercapacity.name}" />
+            <div id="capacity">Capacity<br>
+            <b th:text="${ercapacity.registerSize}+'/40'" /></div>
+        </div>
+        <a href="/ercapacity">Back</a>
+    </main>
+    </body>
+    </html>

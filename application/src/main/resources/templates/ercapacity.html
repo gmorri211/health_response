@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Check ER Capacity - NHS Glasgow</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/banner.jpg" title="Banner" class="banner" width="1152" height="136">
+        </header>
+        <main>
+            <h1>Check ER Capacity</h1>
+            <form action="#" th:action="@{/ercapacity}" th:object="${ercapacity}" method="post">
+                Select Hospital<br>
+                <select th:field="*{name}">
+                    <option value="Royal Infirmary">Royal Infirmary</option>
+                    <option value="Queen Elizabeth">Queen Elizabeth</option>
+                </select><br>
+                <input class="inputButton" id="hospitalSearchButton" type="submit" value="Search">
+            </form>
+            </div>
+        </main>
+    </body>
+</html>
